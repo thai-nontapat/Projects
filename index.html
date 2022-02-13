@@ -13968,20 +13968,17 @@ a.anchor-link {
     </script>
     <!-- End of mathjax configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="HELLO">HELLO<a class="anchor-link" href="#HELLO">&#182;</a></h3>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://data.opendevelopmentmekong.net/dataset/ab20b509-2b7f-442e-8448-05d3a17651ac/resource/719e0ba4-637a-46c5-9ad7-9bc0e4c3752d/download/health_facilities_en.csv&#39;</span>
+<span class="n">df_Origin</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+
+<span class="n">df_Origin</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -13997,19 +13994,257 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
 
 
 
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>7</pre>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ID</th>
+      <th>Ministry</th>
+      <th>Department</th>
+      <th>Agency</th>
+      <th>Lat</th>
+      <th>Long</th>
+      <th>Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1.110000e+11</td>
+      <td>Ministry of Defence</td>
+      <td>Naval Medical Department</td>
+      <td>Royal Thai Army Phramongkutklao Hospital</td>
+      <td>13.76733</td>
+      <td>100.5342</td>
+      <td>Thung Phaya Thai Subdistrict, Ratchathewi Dist...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1.110000e+11</td>
+      <td>Ministry of Justice</td>
+      <td>Department of Corrections</td>
+      <td>Department of Corrections Correctional Institu...</td>
+      <td>13.85018</td>
+      <td>100.5531</td>
+      <td>Ladyao Subdistrict, Chatuchak District, Bangko...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1.110000e+11</td>
+      <td>Royal Thai Police</td>
+      <td>Police Hospial</td>
+      <td>Police Hospital</td>
+      <td>13.74414</td>
+      <td>100.5391</td>
+      <td>Pathumwan, Pathumwan, Bangkok 10330</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1.130000e+11</td>
+      <td>Ministry of Defence</td>
+      <td>Naval Medical Department</td>
+      <td>Royal Thai Army Ananda Mahidol Hospital</td>
+      <td>14.84966</td>
+      <td>100.6670</td>
+      <td>Khao Sam Yot Subdistrict, Mueang Lopburi Distr...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1.130000e+11</td>
+      <td>Ministry of Public Health</td>
+      <td>Department of Mental Health</td>
+      <td>Department of Mental Health, Srithanya Hospital</td>
+      <td>13.84513</td>
+      <td>100.5171</td>
+      <td>Talat Khwan Subdistrict, Mueang Nonthaburi Dis...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 </div>
 
 </div>
 
 </div>
 
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_3_town</span> <span class="o">=</span><span class="n">df_Origin</span><span class="p">[</span><span class="n">df_Origin</span><span class="p">[</span><span class="s1">&#39;Address&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;Khon Kaen|Chiang Mai|Chonburi&#39;</span><span class="p">,</span><span class="n">case</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)]</span>
+<span class="n">df_3_town</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ID</th>
+      <th>Ministry</th>
+      <th>Department</th>
+      <th>Agency</th>
+      <th>Lat</th>
+      <th>Long</th>
+      <th>Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>10</th>
+      <td>1.140000e+11</td>
+      <td>Ministry of Public Health</td>
+      <td>Department of Medical Services</td>
+      <td>Department of Medicine, Neurological Hospital,...</td>
+      <td>18.78978</td>
+      <td>98.96952</td>
+      <td>Number 2, Suthep Road, Suthep Subdistrict, Mue...</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>1.140000e+11</td>
+      <td>Ministry of Public Health</td>
+      <td>Department of Mental Health</td>
+      <td>Department of Mental Health, Suan Prung Hospital</td>
+      <td>18.78074</td>
+      <td>98.97915</td>
+      <td>Hai Ya Subdistrict, Mueang Chiang Mai District...</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>1.140000e+11</td>
+      <td>Ministry of Public Health</td>
+      <td>Department of Mental Health</td>
+      <td>Department of Mental Health, Khon Kaen Rajanag...</td>
+      <td>16.42467</td>
+      <td>102.84870</td>
+      <td>169 Soi Kalaya, Chataphadung Road, Nai Mueang ...</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>8.900000e+12</td>
+      <td>Ministry of Public Health</td>
+      <td>Office of the Permanent Secretary, Ministry of...</td>
+      <td>Mae Ai Hospital Chiang Mai Province</td>
+      <td>20.03843</td>
+      <td>99.30260</td>
+      <td>191 Moo 8, Fang-Thaton Road, Moo 8, Mae Ai Sub...</td>
+    </tr>
+    <tr>
+      <th>87</th>
+      <td>8.900000e+12</td>
+      <td>Ministry of Public Health</td>
+      <td>Office of the Permanent Secretary, Ministry of...</td>
+      <td>Banglamung Hospital Chonburi Province</td>
+      <td>12.96664</td>
+      <td>100.90620</td>
+      <td>No. 6 Moo 5, Naklua Subdistrict, Bang Lamung D...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">location_list</span> <span class="o">=</span> <span class="n">df_3_town</span><span class="p">[</span><span class="s1">&#39;Address&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>  
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
 </div>
 
 </div>
